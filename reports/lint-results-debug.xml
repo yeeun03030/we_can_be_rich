@@ -1,0 +1,2732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.2.2">
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    androidTestImplementation(&quot;androidx.test.ext:junit:1.1.5&quot;)"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\build.gradle.kts"
+            line="44"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    androidTestImplementation(&quot;androidx.test.espresso:espresso-core:3.5.1&quot;)"
+        errorLine2="                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\build.gradle.kts"
+            line="45"
+            column="32"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.google.code.gson:gson than 2.8.6 is available: 2.10"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation(&quot;com.google.code.gson:gson:2.8.6&quot;)"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\build.gradle.kts"
+            line="46"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;18dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml"
+            line="42"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;18dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="53"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;18dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="66"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="        android:textSize=&quot;50dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml"
+            line="15"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="        android:textSize=&quot;70dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml"
+            line="24"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="        android:textSize=&quot;30dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml"
+            line="34"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="        android:textSize=&quot;10dp&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml"
+            line="43"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="DiscouragedApi"
+        severity="Warning"
+        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`)."
+        category="Correctness"
+        priority="2"
+        summary="Using discouraged APIs"
+        explanation="Discouraged APIs are allowed and are not deprecated, but they may be unfit for common use (e.g. due to slow performance or subtle behavior)."
+        errorLine1="                    val resourceId = resources.getIdentifier(&quot;img_$number&quot;, &quot;drawable&quot;, packageName)"
+        errorLine2="                                               ~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\AddDataActivity.kt"
+            line="59"
+            column="48"/>
+    </issue>
+
+    <issue
+        id="DiscouragedApi"
+        severity="Warning"
+        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`)."
+        category="Correctness"
+        priority="2"
+        summary="Using discouraged APIs"
+        explanation="Discouraged APIs are allowed and are not deprecated, but they may be unfit for common use (e.g. due to slow performance or subtle behavior)."
+        errorLine1="                val resourceId = resources.getIdentifier(&quot;img_$number&quot;, &quot;drawable&quot;, packageName)"
+        errorLine2="                                           ~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\EditData.kt"
+            line="65"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="DiscouragedApi"
+        severity="Warning"
+        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`)."
+        category="Correctness"
+        priority="2"
+        summary="Using discouraged APIs"
+        explanation="Discouraged APIs are allowed and are not deprecated, but they may be unfit for common use (e.g. due to slow performance or subtle behavior)."
+        errorLine1="                val resourceId = resources.getIdentifier(&quot;img_$number&quot;, &quot;drawable&quot;, packageName)"
+        errorLine2="                                           ~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\MainActivity.kt"
+            line="78"
+            column="44"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.We_can_be_rich`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.We_can_be_rich`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `#FFFFFF` with a theme that also paints a background (inferred theme is `@style/Theme.We_can_be_rich`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;#FFFFFF&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.We_can_be_rich`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.coin` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\coin.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_1` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_1.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_10` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_10.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_11` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_11.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_12` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_12.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_13` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_13.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_14` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_14.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_15` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_15.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_16` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_16.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_17` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_17.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_18` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_18.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_19` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_19.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_2` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_2.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_20` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_20.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_21` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_21.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_22` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_22.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_23` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_23.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_24` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_24.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_25` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_25.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_26` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_26.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_27` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_27.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_28` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_28.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_29` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_29.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_3` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_3.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_30` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_30.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_31` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_31.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_32` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_32.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_33` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_33.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_34` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_34.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_35` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_35.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_36` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_36.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_37` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_37.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_38` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_38.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_39` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_39.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_4` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_4.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_40` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_40.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_41` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_41.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_42` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_42.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_43` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_43.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_44` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_44.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_45` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_45.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_5` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_5.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_6` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_6.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_7` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_7.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_8` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_8.gif"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.img_9` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_9.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\coin.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\default_image.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_1.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_10.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_11.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_12.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_13.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_14.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_15.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_16.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_17.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_18.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_19.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_2.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_20.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_21.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_22.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_23.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_24.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_25.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_26.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_27.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_28.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_29.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_3.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_30.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_31.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_32.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_33.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_34.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_35.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_36.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_37.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_38.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_39.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_4.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_40.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_41.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_42.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_43.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_44.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_45.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_5.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_6.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_7.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_8.gif"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        severity="Warning"
+        message="Using the `.gif` format for bitmaps is discouraged"
+        category="Usability:Icons"
+        priority="5"
+        summary="Using `.gif` format for bitmaps is discouraged"
+        explanation="The `.gif` file format is discouraged. Consider using `.png` (preferred) or `.jpg` (acceptable) instead."
+        url="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap"
+        urls="https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_9.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/coin.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\coin.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/default_image.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\default_image.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_1.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_1.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_10.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_10.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_11.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_11.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_12.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_12.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_13.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_13.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_14.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_14.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_15.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_15.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_16.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_16.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_17.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_17.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_18.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_18.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_19.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_19.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_2.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_2.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_20.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_20.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_21.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_21.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_22.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_22.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_23.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_23.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_24.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_24.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_25.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_25.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_26.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_26.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_27.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_27.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_28.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_28.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_29.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_29.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_3.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_3.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_30.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_30.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_31.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_31.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_32.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_32.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_33.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_33.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_34.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_34.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_35.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_35.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_36.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_36.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_37.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_37.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_38.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_38.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_39.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_39.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_4.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_4.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_40.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_40.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_41.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_41.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_42.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_42.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_43.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_43.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_44.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_44.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_45.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_45.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_5.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_5.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_6.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_6.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_7.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_7.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_8.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_8.gif"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img_9.gif` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_9.gif"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        severity="Warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        category="Usability"
+        priority="5"
+        summary="Button should be borderless"
+        explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
+        url="https://d.android.com/r/studio-ui/designer/material/dialogs"
+        urls="https://d.android.com/r/studio-ui/designer/material/dialogs"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="73"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ButtonStyle"
+        severity="Warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)"
+        category="Usability"
+        priority="5"
+        summary="Button should be borderless"
+        explanation="Button bars typically use a borderless style for the buttons. Set the `style=&quot;?android:attr/buttonBarButtonStyle&quot;` attribute on each of the buttons, and set `style=&quot;?android:attr/buttonBarStyle&quot;` on the parent layout"
+        url="https://d.android.com/r/studio-ui/designer/material/dialogs"
+        urls="https://d.android.com/r/studio-ui/designer/material/dialogs"
+        errorLine1="        &lt;Button"
+        errorLine2="         ~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="82"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="    &lt;EditText"
+        errorLine2="     ~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="10"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Do not set both `contentDescription` and `hint`: the `contentDescription` will mask the `hint`"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, set their descriptions to `@null`. If your app&apos;s minSdkVersion is 16 or higher, you can instead set these graphical elements&apos; `android:importantForAccessibility` attributes to `no`.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`."
+        url="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        urls="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        errorLine1="        android:contentDescription=&quot;회차 입력 필드&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="18"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="            text = &quot;회차: $round&quot;"
+        errorLine2="                   ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\EditData.kt"
+            line="55"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="            text = &quot;Delete&quot;"
+        errorLine2="                    ~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\EditData.kt"
+            line="79"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        severity="Warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders."
+        category="Internationalization"
+        priority="6"
+        summary="TextView Internationalization"
+        explanation="When calling `TextView#setText`&#xA;* Never call `Number#toString()` to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using `String#format` with proper format specifications (`%d` or `%f`) instead.&#xA;* Do not pass a string literal (e.g. &quot;Hello&quot;) to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.&#xA;* Do not build messages by concatenating text chunks. Such messages can not be properly translated."
+        url="https://developer.android.com/guide/topics/resources/localization.html"
+        urls="https://developer.android.com/guide/topics/resources/localization.html"
+        errorLine1="            text = &quot;회차: $round&quot;"
+        errorLine2="                   ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\MainActivity.kt"
+            line="68"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Lotto number 1&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Lotto number 1&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Lotto number 2&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Lotto number 2&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="31"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Lotto number 3&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Lotto number 3&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="39"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Lotto number 4&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Lotto number 4&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="47"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Lotto number 5&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Lotto number 5&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="55"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Lotto number 6&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Lotto number 6&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="63"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;추첨 시작&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;추첨 시작&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="79"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Generate Lotto Numbers button&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Generate Lotto Numbers button&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="80"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;화면으로 돌아가기&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;화면으로 돌아가기&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="86"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Back button&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Back button&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml"
+            line="89"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Scrollable list of lotto numbers&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:contentDescription=&quot;Scrollable list of lotto numbers&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml"
+            line="15"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Container for lotto numbers&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Container for lotto numbers&quot;>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Layout for buttons&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:contentDescription=&quot;Layout for buttons&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml"
+            line="34"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;편집 완료&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;편집 완료&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml"
+            line="45"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Edit data button&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Edit data button&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml"
+            line="46"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;회차 입력&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:hint=&quot;회차 입력&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;회차 입력 필드&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:contentDescription=&quot;회차 입력 필드&quot; />"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="18"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;번호 목록 스크롤&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:contentDescription=&quot;번호 목록 스크롤&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="25"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;로또 번호 목록 컨테이너&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;로또 번호 목록 컨테이너&quot;>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;버튼 레이아웃&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:contentDescription=&quot;버튼 레이아웃&quot;>"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="43"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;번호 추첨하기&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;번호 추첨하기&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="52"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;데이터 추가 버튼&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;데이터 추가 버튼&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="56"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;편집하기&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;편집하기&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="65"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;데이터 편집 버튼&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;데이터 편집 버튼&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml"
+            line="69"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;You Can&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;You Can&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml"
+            line="14"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Be Rich!&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Be Rich!&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml"
+            line="23"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;시작하기&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;시작하기&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml"
+            line="33"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;※ 해당 어플은 재미를 위한 어플로 금전적인 책임을 지지 않습니다.&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;※ 해당 어플은 재미를 위한 어플로 금전적인 책임을 지지 않습니다.&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml"
+            line="42"
+            column="9"/>
+    </issue>
+
+</issues>

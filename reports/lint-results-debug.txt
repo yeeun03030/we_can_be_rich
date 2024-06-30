@@ -1,0 +1,458 @@
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\build.gradle.kts:44: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\build.gradle.kts:45: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\build.gradle.kts:46: Warning: A newer version of com.google.code.gson:gson than 2.8.6 is available: 2.10 [GradleDependency]
+    implementation("com.google.code.gson:gson:2.8.6")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml:42: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+            android:textSize="18dp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:53: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+            android:textSize="18dp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:66: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+            android:textSize="18dp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml:15: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="50dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml:24: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="70dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml:34: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="30dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml:43: Warning: Should use "sp" instead of "dp" for text sizes [SpUsage]
+        android:textSize="10dp"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SpUsage":
+   When setting text sizes, you should normally use sp, or "scale-independent
+   pixels". This is like the dp unit, but it is also scaled by the user's font
+   size preference. It is recommend you use this unit when specifying font
+   sizes, so they will be adjusted for both the screen density and the user's
+   preference.
+
+   There are cases where you might need to use dp; typically this happens when
+   the text is in a container with a specific dp-size. This will prevent the
+   text from spilling outside the container. Note however that this means that
+   the user's font size settings are not respected, so consider adjusting the
+   layout itself to be more flexible.
+
+   https://developer.android.com/training/multiscreen/screendensities.html
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\AddDataActivity.kt:59: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+                    val resourceId = resources.getIdentifier("img_$number", "drawable", packageName)
+                                               ~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\EditData.kt:65: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+                val resourceId = resources.getIdentifier("img_$number", "drawable", packageName)
+                                           ~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\MainActivity.kt:78: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+                val resourceId = resources.getIdentifier("img_$number", "drawable", packageName)
+                                           ~~~~~~~~~~~~~
+
+   Explanation for issues of type "DiscouragedApi":
+   Discouraged APIs are allowed and are not deprecated, but they may be unfit
+   for common use (e.g. due to slow performance or subtle behavior).
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:8: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme.We_can_be_rich) [Overdraw]
+    android:background="@color/white"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml:7: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme.We_can_be_rich) [Overdraw]
+    android:background="@color/white"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:6: Warning: Possible overdraw: Root element paints background #FFFFFF with a theme that also paints a background (inferred theme is @style/Theme.We_can_be_rich) [Overdraw]
+    android:background="#FFFFFF"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml:8: Warning: Possible overdraw: Root element paints background @color/white with a theme that also paints a background (inferred theme is @style/Theme.We_can_be_rich) [Overdraw]
+    android:background="@color/white"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\coin.gif: Warning: The resource R.drawable.coin appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_1.gif: Warning: The resource R.drawable.img_1 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_10.gif: Warning: The resource R.drawable.img_10 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_11.gif: Warning: The resource R.drawable.img_11 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_12.gif: Warning: The resource R.drawable.img_12 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_13.gif: Warning: The resource R.drawable.img_13 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_14.gif: Warning: The resource R.drawable.img_14 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_15.gif: Warning: The resource R.drawable.img_15 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_16.gif: Warning: The resource R.drawable.img_16 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_17.gif: Warning: The resource R.drawable.img_17 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_18.gif: Warning: The resource R.drawable.img_18 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_19.gif: Warning: The resource R.drawable.img_19 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_2.gif: Warning: The resource R.drawable.img_2 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_20.gif: Warning: The resource R.drawable.img_20 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_21.gif: Warning: The resource R.drawable.img_21 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_22.gif: Warning: The resource R.drawable.img_22 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_23.gif: Warning: The resource R.drawable.img_23 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_24.gif: Warning: The resource R.drawable.img_24 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_25.gif: Warning: The resource R.drawable.img_25 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_26.gif: Warning: The resource R.drawable.img_26 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_27.gif: Warning: The resource R.drawable.img_27 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_28.gif: Warning: The resource R.drawable.img_28 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_29.gif: Warning: The resource R.drawable.img_29 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_3.gif: Warning: The resource R.drawable.img_3 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_30.gif: Warning: The resource R.drawable.img_30 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_31.gif: Warning: The resource R.drawable.img_31 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_32.gif: Warning: The resource R.drawable.img_32 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_33.gif: Warning: The resource R.drawable.img_33 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_34.gif: Warning: The resource R.drawable.img_34 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_35.gif: Warning: The resource R.drawable.img_35 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_36.gif: Warning: The resource R.drawable.img_36 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_37.gif: Warning: The resource R.drawable.img_37 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_38.gif: Warning: The resource R.drawable.img_38 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_39.gif: Warning: The resource R.drawable.img_39 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_4.gif: Warning: The resource R.drawable.img_4 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_40.gif: Warning: The resource R.drawable.img_40 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_41.gif: Warning: The resource R.drawable.img_41 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_42.gif: Warning: The resource R.drawable.img_42 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_43.gif: Warning: The resource R.drawable.img_43 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_44.gif: Warning: The resource R.drawable.img_44 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_45.gif: Warning: The resource R.drawable.img_45 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_5.gif: Warning: The resource R.drawable.img_5 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_6.gif: Warning: The resource R.drawable.img_6 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_7.gif: Warning: The resource R.drawable.img_7 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_8.gif: Warning: The resource R.drawable.img_8 appears to be unused [UnusedResources]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_9.gif: Warning: The resource R.drawable.img_9 appears to be unused [UnusedResources]
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\coin.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\default_image.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_1.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_10.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_11.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_12.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_13.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_14.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_15.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_16.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_17.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_18.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_19.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_2.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_20.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_21.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_22.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_23.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_24.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_25.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_26.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_27.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_28.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_29.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_3.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_30.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_31.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_32.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_33.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_34.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_35.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_36.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_37.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_38.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_39.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_4.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_40.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_41.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_42.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_43.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_44.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_45.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_5.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_6.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_7.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_8.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_9.gif: Warning: Using the .gif format for bitmaps is discouraged [GifUsage]
+
+   Explanation for issues of type "GifUsage":
+   The .gif file format is discouraged. Consider using .png (preferred) or
+   .jpg (acceptable) instead.
+
+   https://developer.android.com/guide/topics/resources/drawable-resource.html#Bitmap
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\coin.gif: Warning: Found bitmap drawable res/drawable/coin.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\default_image.gif: Warning: Found bitmap drawable res/drawable/default_image.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_1.gif: Warning: Found bitmap drawable res/drawable/img_1.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_10.gif: Warning: Found bitmap drawable res/drawable/img_10.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_11.gif: Warning: Found bitmap drawable res/drawable/img_11.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_12.gif: Warning: Found bitmap drawable res/drawable/img_12.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_13.gif: Warning: Found bitmap drawable res/drawable/img_13.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_14.gif: Warning: Found bitmap drawable res/drawable/img_14.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_15.gif: Warning: Found bitmap drawable res/drawable/img_15.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_16.gif: Warning: Found bitmap drawable res/drawable/img_16.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_17.gif: Warning: Found bitmap drawable res/drawable/img_17.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_18.gif: Warning: Found bitmap drawable res/drawable/img_18.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_19.gif: Warning: Found bitmap drawable res/drawable/img_19.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_2.gif: Warning: Found bitmap drawable res/drawable/img_2.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_20.gif: Warning: Found bitmap drawable res/drawable/img_20.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_21.gif: Warning: Found bitmap drawable res/drawable/img_21.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_22.gif: Warning: Found bitmap drawable res/drawable/img_22.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_23.gif: Warning: Found bitmap drawable res/drawable/img_23.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_24.gif: Warning: Found bitmap drawable res/drawable/img_24.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_25.gif: Warning: Found bitmap drawable res/drawable/img_25.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_26.gif: Warning: Found bitmap drawable res/drawable/img_26.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_27.gif: Warning: Found bitmap drawable res/drawable/img_27.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_28.gif: Warning: Found bitmap drawable res/drawable/img_28.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_29.gif: Warning: Found bitmap drawable res/drawable/img_29.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_3.gif: Warning: Found bitmap drawable res/drawable/img_3.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_30.gif: Warning: Found bitmap drawable res/drawable/img_30.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_31.gif: Warning: Found bitmap drawable res/drawable/img_31.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_32.gif: Warning: Found bitmap drawable res/drawable/img_32.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_33.gif: Warning: Found bitmap drawable res/drawable/img_33.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_34.gif: Warning: Found bitmap drawable res/drawable/img_34.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_35.gif: Warning: Found bitmap drawable res/drawable/img_35.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_36.gif: Warning: Found bitmap drawable res/drawable/img_36.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_37.gif: Warning: Found bitmap drawable res/drawable/img_37.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_38.gif: Warning: Found bitmap drawable res/drawable/img_38.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_39.gif: Warning: Found bitmap drawable res/drawable/img_39.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_4.gif: Warning: Found bitmap drawable res/drawable/img_4.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_40.gif: Warning: Found bitmap drawable res/drawable/img_40.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_41.gif: Warning: Found bitmap drawable res/drawable/img_41.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_42.gif: Warning: Found bitmap drawable res/drawable/img_42.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_43.gif: Warning: Found bitmap drawable res/drawable/img_43.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_44.gif: Warning: Found bitmap drawable res/drawable/img_44.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_45.gif: Warning: Found bitmap drawable res/drawable/img_45.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_5.gif: Warning: Found bitmap drawable res/drawable/img_5.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_6.gif: Warning: Found bitmap drawable res/drawable/img_6.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_7.gif: Warning: Found bitmap drawable res/drawable/img_7.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_8.gif: Warning: Found bitmap drawable res/drawable/img_8.gif in densityless folder [IconLocation]
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\drawable\img_9.gif: Warning: Found bitmap drawable res/drawable/img_9.gif in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:73: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+        <Button
+         ~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:82: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+        <Button
+         ~~~~~~
+
+   Explanation for issues of type "ButtonStyle":
+   Button bars typically use a borderless style for the buttons. Set the
+   style="?android:attr/buttonBarButtonStyle" attribute on each of the
+   buttons, and set style="?android:attr/buttonBarStyle" on the parent layout
+
+   https://d.android.com/r/studio-ui/designer/material/dialogs
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:10: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:18: Warning: Do not set both contentDescription and hint: the contentDescription will mask the hint [ContentDescription]
+        android:contentDescription="회차 입력 필드" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\EditData.kt:55: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            text = "회차: $round"
+                   ~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\EditData.kt:79: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            text = "Delete"
+                    ~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\java\kr\ac\kopo\we_can_be_rich\MainActivity.kt:68: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            text = "회차: $round"
+                   ~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:23: Warning: Hardcoded string "Lotto number 1", should use @string resource [HardcodedText]
+            android:contentDescription="Lotto number 1" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:31: Warning: Hardcoded string "Lotto number 2", should use @string resource [HardcodedText]
+            android:contentDescription="Lotto number 2" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:39: Warning: Hardcoded string "Lotto number 3", should use @string resource [HardcodedText]
+            android:contentDescription="Lotto number 3" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:47: Warning: Hardcoded string "Lotto number 4", should use @string resource [HardcodedText]
+            android:contentDescription="Lotto number 4" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:55: Warning: Hardcoded string "Lotto number 5", should use @string resource [HardcodedText]
+            android:contentDescription="Lotto number 5" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:63: Warning: Hardcoded string "Lotto number 6", should use @string resource [HardcodedText]
+            android:contentDescription="Lotto number 6" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:79: Warning: Hardcoded string "추첨 시작", should use @string resource [HardcodedText]
+            android:text="추첨 시작"
+            ~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:80: Warning: Hardcoded string "Generate Lotto Numbers button", should use @string resource [HardcodedText]
+            android:contentDescription="Generate Lotto Numbers button" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:86: Warning: Hardcoded string "화면으로 돌아가기", should use @string resource [HardcodedText]
+            android:text="화면으로 돌아가기"
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_add_data.xml:89: Warning: Hardcoded string "Back button", should use @string resource [HardcodedText]
+            android:contentDescription="Back button"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml:15: Warning: Hardcoded string "Scrollable list of lotto numbers", should use @string resource [HardcodedText]
+        android:contentDescription="Scrollable list of lotto numbers">
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml:22: Warning: Hardcoded string "Container for lotto numbers", should use @string resource [HardcodedText]
+            android:contentDescription="Container for lotto numbers">
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml:34: Warning: Hardcoded string "Layout for buttons", should use @string resource [HardcodedText]
+        android:contentDescription="Layout for buttons">
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml:45: Warning: Hardcoded string "편집 완료", should use @string resource [HardcodedText]
+            android:text="편집 완료"
+            ~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_edit_data.xml:46: Warning: Hardcoded string "Edit data button", should use @string resource [HardcodedText]
+            android:contentDescription="Edit data button" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:14: Warning: Hardcoded string "회차 입력", should use @string resource [HardcodedText]
+        android:hint="회차 입력"
+        ~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:18: Warning: Hardcoded string "회차 입력 필드", should use @string resource [HardcodedText]
+        android:contentDescription="회차 입력 필드" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:25: Warning: Hardcoded string "번호 목록 스크롤", should use @string resource [HardcodedText]
+        android:contentDescription="번호 목록 스크롤">
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:32: Warning: Hardcoded string "로또 번호 목록 컨테이너", should use @string resource [HardcodedText]
+            android:contentDescription="로또 번호 목록 컨테이너">
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:43: Warning: Hardcoded string "버튼 레이아웃", should use @string resource [HardcodedText]
+        android:contentDescription="버튼 레이아웃">
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:52: Warning: Hardcoded string "번호 추첨하기", should use @string resource [HardcodedText]
+            android:text="번호 추첨하기"
+            ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:56: Warning: Hardcoded string "데이터 추가 버튼", should use @string resource [HardcodedText]
+            android:contentDescription="데이터 추가 버튼" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:65: Warning: Hardcoded string "편집하기", should use @string resource [HardcodedText]
+            android:text="편집하기"
+            ~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_main.xml:69: Warning: Hardcoded string "데이터 편집 버튼", should use @string resource [HardcodedText]
+            android:contentDescription="데이터 편집 버튼" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml:14: Warning: Hardcoded string "You Can", should use @string resource [HardcodedText]
+        android:text="You Can"
+        ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml:23: Warning: Hardcoded string "Be Rich!", should use @string resource [HardcodedText]
+        android:text="Be Rich!"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml:33: Warning: Hardcoded string "시작하기", should use @string resource [HardcodedText]
+        android:text="시작하기"
+        ~~~~~~~~~~~~~~~~~~~
+C:\Users\AISW-509-184\AndroidStudioProjects\we_can_be_rich\app\src\main\res\layout\activity_real_main.xml:42: Warning: Hardcoded string "※ 해당 어플은 재미를 위한 어플로 금전적인 책임을 지지 않습니다.", should use @string resource [HardcodedText]
+        android:text="※ 해당 어플은 재미를 위한 어플로 금전적인 책임을 지지 않습니다."
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 192 warnings
