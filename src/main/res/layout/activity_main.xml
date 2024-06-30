@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- 회차 입력을 위한 EditText -->
+    <EditText
+        android:id="@+id/roundNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="회차 입력"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:contentDescription="회차 입력 필드" />
+
+    <!-- 회차 전송 버튼 -->
+    <Button
+        android:id="@+id/submitRoundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회차 검색"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:contentDescription="회차 전송 버튼" />
+
+    <!-- 검색된 회차 결과를 보여줄 LinearLayout -->
+    <LinearLayout
+        android:id="@+id/searchedRoundContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:contentDescription="검색된 회차 결과 컨테이너" />
+    <!-- 구분선 추가 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#BDBDBD"
+        android:layout_marginVertical="10dp" />
+
+    <!-- '내 추첨번호' 제목 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 추첨번호"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:contentDescription="내 추첨번호 제목" />
+
+    <!-- 추첨된 번호 목록을 보여줄 ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:contentDescription="번호 목록 스크롤">
+
+    <LinearLayout
+        android:id="@+id/numberListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:contentDescription="로또 번호 목록 컨테이너">
+    <!-- 여기에 번호가 추가됩니다 -->
+    </LinearLayout>
+    </ScrollView>
+
+    <GridLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:contentDescription="버튼 레이아웃">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:text="번호 추첨하기"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:contentDescription="데이터 추가 버튼" />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:text="편집하기"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8BC34A"
+            android:contentDescription="데이터 편집 버튼" />
+    </GridLayout>
+</LinearLayout>

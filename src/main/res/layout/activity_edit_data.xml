@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".EditData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:contentDescription="Scrollable list of lotto numbers">
+
+        <LinearLayout
+            android:id="@+id/numberListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:contentDescription="Container for lotto numbers">
+            <!-- 여기에 여러 LinearLayout이 추가됩니다 -->
+        </LinearLayout>
+    </ScrollView>
+
+    <GridLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:contentDescription="Layout for buttons">
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:backgroundTint="#3F6340"
+            android:text="편집 완료"
+            android:contentDescription="Edit data button" />
+    </GridLayout>
+</LinearLayout>

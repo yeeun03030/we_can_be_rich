@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".AddDataActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/lottoImageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/default_image"
+            android:contentDescription="Lotto number 1" />
+
+        <ImageView
+            android:id="@+id/lottoImageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/default_image"
+            android:contentDescription="Lotto number 2" />
+
+        <ImageView
+            android:id="@+id/lottoImageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/default_image"
+            android:contentDescription="Lotto number 3" />
+
+        <ImageView
+            android:id="@+id/lottoImageView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/default_image"
+            android:contentDescription="Lotto number 4" />
+
+        <ImageView
+            android:id="@+id/lottoImageView5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/default_image"
+            android:contentDescription="Lotto number 5" />
+
+        <ImageView
+            android:id="@+id/lottoImageView6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/default_image"
+            android:contentDescription="Lotto number 6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/generateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:text="추첨 시작"
+            android:contentDescription="Generate Lotto Numbers button" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="화면으로 돌아가기"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:contentDescription="Back button"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>
